@@ -1,0 +1,219 @@
+/*General Styles*/
+
+* {
+	margin: 0;
+	vertical-align: top;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+body {	
+	background-color: #ffffff;
+  font-family: 'Kalam', cursive;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.25;
+}
+
+a {
+	color: #ff6454;
+	text-decoration: none;
+}
+
+a:hover {
+  	color: #006bb6;
+	text-decoration: none;
+  	transition: 0.3s;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+.btn {
+  font-family:'Roboto', sans-serif;
+	color: #ffffff;
+	background-color: #006bb6;
+	border: none;
+	border-radius: 8px;
+	padding: 16px 36px;
+	font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+  width: 100%;
+}
+
+.btn:hover, .btn:active, .btn:focus, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+	outline: none;
+	color: #ffffff;
+	background-color: #ff6454;
+  transition: 0.5s;
+}
+
+/*Layout*/
+
+.hero {
+	text-align: center;
+  animation-timing-function: cubic-bezier(.2,.08,.25,.92);
+	animation-fill-mode: forwards;
+  padding: 0% 10% 0% 10%;
+	width:100vw;
+	height: 88vh;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+
+.logo {
+	width: 50%;
+	padding-bottom: 15px;
+}
+
+.seal {
+  width: 12%;
+  padding-bottom: 13px;
+}
+
+.catchphrase {
+  width: 90%;
+	margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.shoes{
+  width: 110%;
+  margin-bottom: 36px;
+}
+
+.brand {
+  margin-bottom: 36px;
+}
+
+.notfound {
+	width: 75px;
+	padding-bottom: 11px;
+}
+
+.social {
+	background: #f6f6f6;
+  border-bottom: 1px solid #e6e6e6;
+	margin: 0 auto;
+}
+
+.social a {
+  width: calc(100vw / 5.5);
+  height: 12vh;
+  display: table-cell;
+  border: 0;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.wrap {
+  max-width: 1600px;
+}
+
+/*Animation*/
+
+@keyframes fade {
+
+0% {
+	transform: translateY(20px);
+  opacity: 0;
+}
+
+100% {
+  opacity: 1;
+}
+
+}
+
+.fade {
+  opacity: 0;
+}
+
+.fade_ani {
+  animation-name: fade;
+  animation-duration: .3s;
+	animation-fill-mode: forwards;  
+}
+
+.logo {
+	animation-delay: .1s;
+}
+
+.quote {
+	animation-delay: .3s;
+}
+
+.shoes {
+	animation-delay: .4s;
+}
+
+.buy {
+	animation-delay: .7s;
+}
+
+.contact {
+	animation-delay: .9s;
+}
+
+
+/*Media Queries*/
+
+@media screen and (min-width: 768px) {
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+.logo {
+	width: 280px;
+	padding-bottom: 13px;
+}
+
+.seal {
+  width: 64px;
+  padding-bottom: 13px;
+}
+
+.catchphrase {
+  width: 50%;
+}
+
+.shoes {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.notfound {	
+	width: 100px;
+	padding-bottom: 13px;
+}
+
+.btn {
+ font-size: 18px;
+}
+
+.social a {
+  width: calc(100vw / 4);
+}
+
+}
