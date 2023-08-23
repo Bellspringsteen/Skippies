@@ -26,6 +26,20 @@ h2 {
 	line-height: 1.25;
 }
 
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family:'Roboto', sans-serif;
+}
+
+h4 {
+  font-size: 12px;
+  font-family:'Roboto', sans-serif;
+}
+
 a {
 	color: #ff6454;
 	text-decoration: none;
@@ -40,6 +54,12 @@ a:hover {
 a:hover, a:active, a:focus {
 	text-decoration: none;
 }
+
+.shopify-buy-frame--product {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+  }
 
 .btn {
   font-family:'Roboto', sans-serif;
@@ -123,6 +143,14 @@ a:hover, a:active, a:focus {
 
 .wrap {
   max-width: 1600px;
+}
+
+.product-component-1692634478164 {
+	width:100vw;
+	height: 88vh;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #ffffff;
 }
 
 /*Animation*/
