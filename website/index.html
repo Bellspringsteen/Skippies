@@ -747,6 +747,77 @@
 </div>
 </div>
 </div>
+<div class="scroll-container">
+      <img src="img/carousel/1.jpg" alt="Skippies Brooklyn Shoes">
+      <img src="img/carousel/2.jpg" alt="Skippies Brooklyn Shoes">
+    <img src="img/carousel/2.jpg" alt="Skippies Brooklyn Shoes">
+    <img src="img/carousel/3.jpg" alt="Skippies Brooklyn Shoes">
+    <img src="img/carousel/4.jpg" alt="Skippies Brooklyn Shoes">
+    <img src="img/carousel/5.jpg" alt="Skippies Brooklyn Shoes">
+    <img src="img/carousel/6.jpg" alt="Skippies Brooklyn Shoes">
+    <img src="img/carousel/7.jpg" alt="Skippies Brooklyn Shoes">
+    <img src="img/carousel/8.jpg" alt="Skippies Brooklyn Shoes">
+    <img src="img/carousel/9.jpg" alt="Skippies Brooklyn Shoes">
+ </div>
+
+<div class="our-story">
+  <h2>Our Story</h2>
+  <p><strong>TLDR</strong> <a href="https://en.wikipedia.org/wiki/Feiyue#:~:text=A%20dispute%20exists,businesses.%22%5B17%5D" style="color: blue"> “Liu claims the French company took advantage of the Chinese at a time when China was still grappling with capitalism and transitioning from all factories being state-owned assets to devolving some rights to individual businesses."</a> You can’t buy actual Dafu Rubber 501 Feiyue because of this. So we contacted Mr. Liu and jointly created a special run of the original Dafu Rubber 501s with Brooklyn as the logo.</p>
+</br>
+  <p>Skippies is a story of 3 friends (Alex, Victor, and Qingqiao) and a quest for clothes with a high ROI (Return on Investment). Shoes wear out fast, you can make shoes heavy with hard rubber, and they will last longer, but your feet will suffer. <a href="https://en.wikipedia.org/wiki/Minimalist_shoe" style="color: blue;"> Minimalist shoes</a> that are light with really flexible soles are a joy to wear and run in. And with less material, they should be cheaper, but they aren't. Why? Because companies assume that with a niche product they can apply <a href="https://en.wikipedia.org/wiki/Minimalist_shoe" style="color: blue;">Customer Price Perception </a> to get you to pay more for the "perception" of quality. Dont be so predictable.</p>
+</br>
+  <p>One day at the office, I saw Norman wearing minimalist-looking canvas shoes he had bought in Taiwan. Their brand was Feiyue. <a href="https://en.wikipedia.org/wiki/Feiyue" style="color: blue;">Investigating</a> the story and you come across this amazing tidbit “Liu claims the French company took advantage of the Chinese at a time when China was still grappling with capitalism and transitioning from all factories being state-owned assets to devolving some rights to individual businesses."</p>
+</br>
+<div class="video-container">
+  <iframe width="75%" height="315" src="https://www.youtube.com/embed/EslrDVTja48?si=q5Hb8QIAIdv2eczD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</br>
+  <p>After a year of ordering shoes from Aliexpress and trying the Top One, red dot, and the original Dafu Rubber green triangle shoes, we knew we had found the perfect shoes. Super light. Very flexible sole. So we contacted Mr. Liu on WeChat from Dafu Rubber and found a friend. We registered Skippies Industries LLC and Trademark. We learned that <a href="https://trademarks.justia.com/874/10/feiyue-87410302.html" style="color: blue;"> International LLC of Florida</a> registered the name Feiyue for footwear. So we changed the name. We are New Yorkers, so for our first run of shoes, we picked our favorite borough for a Big Night Out, Brooklyn.</p>
+
+</div>
+<div class="technical-details">
+  <h2>Technical Details</h2>
+  <ul>
+    <li>
+      <strong>Material:</strong> Sole and wrap around is vulcanized rubber. Hardness level (we are currently measuring).
+    </li>
+    <li>
+      <strong>The uppers are made of:</strong> Cotton, woven in canvas.
+    </li>
+    <li>
+      <strong>The laces are:</strong> Cotton.
+    </li>
+    <li>
+      <strong>Additional Features:</strong> There is a slim foam insert (we are considering a version with this removed for an even more minimalist shoe).
+    </li>
+  </ul>
+</div>
+</div>
+<div class="faq-container">
+  <h2>FAQ</h2>
+  <div class="faq-item">
+    <h3>How long do they last?</h3>
+    <ul>
+      <li> 3 months in good condition and 6 months in serviceable but worn condition if used every day for exercise and worn all day. 
+    </ul>
+  </div>
+  <div class="faq-item">
+    <h3>How can I clean them?</h3>
+    <ul>
+      <li>Best Method: Dunk the shoes in a bucket of soapy water and scrub. Set them to dry in front of a fan on high blowing until dry.</li>
+      <li>Washing Machine: You can put them in the washing machine; however, the noise is annoying! And it beats up the shoes.</li>
+      <li>Oxiclean or other stain removers work great.</li>
+    </ul>
+  </div>
+  <div class="faq-item">
+    <h3>How long is shipping?</h3>
+    <p>We are experimenting with shipping methods, but it's available worldwide with 4-14 day shipping in most cases.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Why don’t they arrive with the shoes already laced up?</h3>
+    <p>It's fun to lace your own shoes, right?</p>
+  </div>
+</div>
 
 <script>
 // When the user clicks on div, open the popup
@@ -754,6 +825,29 @@ function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
+
+let scrollAmount = 0;
+
+function startScrollingLeft() {
+    scrollAmount = 1;
+    scroll();
+}
+
+function startScrollingRight() {
+    scrollAmount = -1;
+    scroll();
+}
+
+function stopScrolling() {
+    scrollAmount = 0;
+}
+
+function scroll() {
+    const imageContainer = document.querySelector(".image-container");
+    imageContainer.scrollLeft += scrollAmount;
+    requestAnimationFrame(scroll);
+}
+
 </script>
   </div>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script></script>
@@ -764,6 +858,11 @@ function myFunction() {
       <a href="mailto:contact@skippies.xyz" target="_blank">
         <h2 class="contact fade fade_ani">contact@skippies.xyz</h2>
       </a>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/skippies.xyz" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/profile.php?id=61551121873431" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="https://www.tiktok.com/@skippies.xyz" target="_blank"><img src="img/tik-tok.png" alt="TikTok"></a>
+      </div>
     </div>
   </div>  
 </body>
