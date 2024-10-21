@@ -101,582 +101,290 @@
 		</div>
   </div>
 
-	<div class="sneakers row">
-		<div class="column-2 black">
-      <div class="row">
-			<img src="img/brooklyn-black-sneakers.png" class="shoes fade fade_ani" alt="Skippies shoes.">
-      </div>
-			<div id='product-component-1697496834485' class="row contact fade fade_ani">
-			 <h5 align="left">SELECT A SIZE</h5>
-       <script type="text/javascript">
-    /*<![CDATA[*/
-    (function () {
-      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-      if (window.ShopifyBuy) {
-        if (window.ShopifyBuy.UI) {
-          ShopifyBuyInit();
-        } else {
-          loadScript();
-        }
+  <div id='collection-component-1729472948974'></div>
+  <script type="text/javascript">
+  /*<![CDATA[*/
+  (function () {
+    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+    if (window.ShopifyBuy) {
+      if (window.ShopifyBuy.UI) {
+        ShopifyBuyInit();
       } else {
         loadScript();
       }
-      function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        script.onload = ShopifyBuyInit;
-      }
-      function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
-          domain: '66ab06-2.myshopify.com',
-          storefrontAccessToken: '29d906580c5eb1ef459caec96da511c9',
-        });
-        ShopifyBuy.UI.onReady(client).then(function (ui) {
-          ui.createComponent('product', {
-            id: '8727071195423',
-            node: document.getElementById('product-component-1697496834485'),
-            moneyFormat: '%24%7B%7Bamount%7D%7D',
-            options: {
-      "product": {
-        "styles": {
-          "product": {
-            "@media (min-width: 601px)": {
-              "max-width": "calc(25% - 20px)",
-              "margin-left": "20px",
-              "margin-bottom": "50px"
-            }
+    } else {
+      loadScript();
+    }
+    function loadScript() {
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = scriptURL;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+      script.onload = ShopifyBuyInit;
+    }
+    function ShopifyBuyInit() {
+      var client = ShopifyBuy.buildClient({
+        domain: '66ab06-2.myshopify.com',
+        storefrontAccessToken: '29d906580c5eb1ef459caec96da511c9',
+      });
+      ShopifyBuy.UI.onReady(client).then(function (ui) {
+        ui.createComponent('collection', {
+          id: '456990523679',
+          node: document.getElementById('collection-component-1729472948974'),
+          moneyFormat: '%24%7B%7Bamount%7D%7D',
+          options: {
+    "product": {
+      "styles": {
+        "product": {
+          "@media (min-width: 601px)": {
+            "max-width": "calc(33.33333% - 30px)",
+            "margin-left": "30px",
+            "margin-bottom": "50px",
+            "width": "calc(33.33333% - 30px)"
           },
-          "button": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            ":hover": {
-              "background-color": "#ff6454"
-            },
-            "background-color": "#006bb6",
-            ":focus": {
-              "background-color": "#ff6454"
-            },
-            "border-radius": "8px",
-            "padding-left": "22px",
-            "padding-right": "22px"
+          "img": {
+            "height": "calc(100% - 15px)",
+            "position": "absolute",
+            "left": "0",
+            "right": "0",
+            "top": "0"
           },
-          "quantityInput": {
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px"
+          "imgWrapper": {
+            "padding-top": "calc(75% + 15px)",
+            "position": "relative",
+            "height": "0"
           }
         },
-        "contents": {
-          "img": false,
-          "title": false,
-          "price": false
+        "button": {
+          "font-family": "Roboto, sans-serif",
+          "font-weight": "bold",
+          "font-size": "16px",
+          "padding-top": "16px",
+          "padding-bottom": "16px",
+          ":hover": {
+            "background-color": "#e65a4c"
+          },
+          "background-color": "#ff6454",
+          ":focus": {
+            "background-color": "#e65a4c"
+          },
+          "border-radius": "8px"
         },
-        "text": {
-          "button": "GET THE BROOKLYN MODEL"
-        },
-        "googleFonts": [
-          "Roboto"
-        ]
-      },
-      "productSet": {
-        "styles": {
-          "products": {
-            "@media (min-width: 601px)": {
-              "margin-left": "-20px"
-            }
-          }
+        "quantityInput": {
+          "font-size": "16px",
+          "padding-top": "16px",
+          "padding-bottom": "16px"
         }
       },
-      "modalProduct": {
-        "contents": {
-          "img": false,
-          "imgWithCarousel": true,
-          "button": false,
-          "buttonWithQuantity": true
-        },
-        "styles": {
-          "product": {
-            "@media (min-width: 601px)": {
-              "max-width": "100%",
-              "margin-left": "0px",
-              "margin-bottom": "0px"
-            }
-          },
-          "button": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            ":hover": {
-              "background-color": "#ff6454"
-            },
-            "background-color": "#006bb6",
-            ":focus": {
-              "background-color": "#ff6454"
-            },
-            "border-radius": "8px",
-            "padding-left": "22px",
-            "padding-right": "22px"
-          },
-          "quantityInput": {
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px"
-          }
-        },
-        "googleFonts": [
-          "Roboto"
-        ],
-        "text": {
-          "button": "Add to cart"
-        }
+      "text": {
+        "button": "Add to cart"
       },
-      "option": {
-        "styles": {
-          "label": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold"
-          },
-          "select": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold"
-          }
-        },
-        "googleFonts": [
-          "Roboto"
-        ]
-      },
-      "cart": {
-        "styles": {
-          "button": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            ":hover": {
-              "background-color": "#ff6454"
-            },
-            "background-color": "#006bb6",
-            ":focus": {
-              "background-color": "#ff6454"
-            },
-            "border-radius": "8px"
-          },
-          "title": {
-            "color": "#4d4d4d"
-          },
-          "header": {
-            "color": "#4d4d4d"
-          },
-          "lineItems": {
-            "color": "#4d4d4d"
-          },
-          "subtotalText": {
-            "color": "#4d4d4d"
-          },
-          "subtotal": {
-            "color": "#4d4d4d"
-          },
-          "notice": {
-            "color": "#4d4d4d"
-          },
-          "currency": {
-            "color": "#4d4d4d"
-          },
-          "close": {
-            "color": "#4d4d4d",
-            ":hover": {
-              "color": "#4d4d4d"
-            }
-          },
-          "empty": {
-            "color": "#4d4d4d"
-          },
-          "noteDescription": {
-            "color": "#4d4d4d"
-          },
-          "discountText": {
-            "color": "#4d4d4d"
-          },
-          "discountIcon": {
-            "fill": "#4d4d4d"
-          },
-          "discountAmount": {
-            "color": "#4d4d4d"
-          }
-        },
-        "text": {
-          "title": "My Skippies Shopping Cart",
-          "total": "Subtotal",
-          "button": "CONTINUE TO CHECKOUT"
-        },
-        "popup": false,
-        "googleFonts": [
-          "Roboto"
-        ]
-      },
-      "toggle": {
-        "styles": {
-          "toggle": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold",
-            "background-color": "#ff6454",
-            ":hover": {
-              "background-color": "#006bb6"
-            },
-            ":focus": {
-              "background-color": "#006bb6"
-            }
-          },
-          "count": {
-            "font-size": "16px"
-          }
-        },
-        "googleFonts": [
-          "Roboto"
-        ]
-      },
-      "lineItem": {
-        "styles": {
-          "variantTitle": {
-            "color": "#4d4d4d"
-          },
-          "title": {
-            "color": "#4d4d4d"
-          },
-          "price": {
-            "color": "#4d4d4d"
-          },
-          "fullPrice": {
-            "color": "#4d4d4d"
-          },
-          "discount": {
-            "color": "#4d4d4d"
-          },
-          "discountIcon": {
-            "fill": "#4d4d4d"
-          },
-          "quantity": {
-            "color": "#4d4d4d"
-          },
-          "quantityIncrement": {
-            "color": "#4d4d4d",
-            "border-color": "#4d4d4d"
-          },
-          "quantityDecrement": {
-            "color": "#4d4d4d",
-            "border-color": "#4d4d4d"
-          },
-          "quantityInput": {
-            "color": "#4d4d4d",
-            "border-color": "#4d4d4d"
+      "googleFonts": [
+        "Roboto"
+      ]
+    },
+    "productSet": {
+      "styles": {
+        "products": {
+          "@media (min-width: 601px)": {
+            "margin-left": "-30px"
           }
         }
       }
     },
-          });
-        });
-      }
-    })();
-    /*]]>*/
-    </script>
-          </div>
-        </div>
-        <div class="column-2 white">
-          <div class="row">
-          <img src="img/brooklyn-white-sneakers.png" class="shoes fade fade_ani" alt="Skippies shoes.">
-          </div>
-          <div id='product-component-1692741425163' class="contact fade fade_ani">
-          <h5 align="left" style="color:#ffffff">SELECT A SIZE</h5>
-        </div>
-    <script type="text/javascript">
-    /*<![CDATA[*/
-    (function () {
-      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-      if (window.ShopifyBuy) {
-        if (window.ShopifyBuy.UI) {
-          ShopifyBuyInit();
-        } else {
-          loadScript();
-        }
-      } else {
-        loadScript();
-      }
-      function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        script.onload = ShopifyBuyInit;
-      }
-      function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
-          domain: '66ab06-2.myshopify.com',
-          storefrontAccessToken: '29d906580c5eb1ef459caec96da511c9',
-        });
-        ShopifyBuy.UI.onReady(client).then(function (ui) {
-          ui.createComponent('product', {
-            id: '8495640707359',
-            node: document.getElementById('product-component-1692741425163'),
-            moneyFormat: '%24%7B%7Bamount%7D%7D',
-            options: {
-      "product": {
-        "styles": {
-          "product": {
-            "@media (min-width: 601px)": {
-              "max-width": "calc(25% - 20px)",
-              "margin-left": "20px",
-              "margin-bottom": "50px"
-            }
-          },
-          "button": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            ":hover": {
-              "background-color": "#006bb6"
-            },
-            "background-color": "#ff6454",
-            ":focus": {
-              "background-color": "#ff6454"
-            },
-            "border-radius": "8px",
-            "padding-left": "22px",
-            "padding-right": "22px"
-          },
-          "quantityInput": {
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px"
-          }
-        },
-        "contents": {
-          "img": false,
-          "title": false,
-          "price": false
-        },
-        "text": {
-          "button": "GET THE BROOKLYN MODEL"
-        },
-        "googleFonts": [
-          "Roboto"
-        ]
+    "modalProduct": {
+      "contents": {
+        "img": false,
+        "imgWithCarousel": true,
+        "button": false,
+        "buttonWithQuantity": true
       },
-      "productSet": {
-        "styles": {
-          "products": {
-            "@media (min-width: 601px)": {
-              "margin-left": "-20px"
-            }
+      "styles": {
+        "product": {
+          "@media (min-width: 601px)": {
+            "max-width": "100%",
+            "margin-left": "0px",
+            "margin-bottom": "0px"
           }
+        },
+        "button": {
+          "font-family": "Roboto, sans-serif",
+          "font-weight": "bold",
+          "font-size": "16px",
+          "padding-top": "16px",
+          "padding-bottom": "16px",
+          ":hover": {
+            "background-color": "#e65a4c"
+          },
+          "background-color": "#ff6454",
+          ":focus": {
+            "background-color": "#e65a4c"
+          },
+          "border-radius": "8px"
+        },
+        "quantityInput": {
+          "font-size": "16px",
+          "padding-top": "16px",
+          "padding-bottom": "16px"
         }
       },
-      "modalProduct": {
-        "contents": {
-          "img": false,
-          "imgWithCarousel": true,
-          "button": false,
-          "buttonWithQuantity": true
-        },
-        "styles": {
-          "product": {
-            "@media (min-width: 601px)": {
-              "max-width": "100%",
-              "margin-left": "0px",
-              "margin-bottom": "0px"
-            }
-          },
-          "button": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            ":hover": {
-              "background-color": "#006bb6"
-            },
-            "background-color": "#ff6454",
-            ":focus": {
-              "background-color": "#ff6454"
-            },
-            "border-radius": "8px",
-            "padding-left": "22px",
-            "padding-right": "22px"
-          },
-          "quantityInput": {
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px"
-          }
-        },
-        "googleFonts": [
-          "Roboto"
-        ],
-        "text": {
-          "button": "Add to cart"
-        }
-      },
-      "option": {
-        "styles": {
-          "label": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold"
-          },
-          "select": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold"
-          }
-        },
-        "googleFonts": [
-          "Roboto"
-        ]
-      },
-      "cart": {
-        "styles": {
-          "button": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold",
-            "font-size": "16px",
-            "padding-top": "16px",
-            "padding-bottom": "16px",
-            ":hover": {
-              "background-color": "#006bb6"
-            },
-            "background-color": "#006bb6",
-            ":focus": {
-              "background-color": "#ff6454"
-            },
-            "border-radius": "8px"
-          },
-          "title": {
-            "color": "#4d4d4d"
-          },
-          "header": {
-            "color": "#4d4d4d"
-          },
-          "lineItems": {
-            "color": "#4d4d4d"
-          },
-          "subtotalText": {
-            "color": "#4d4d4d"
-          },
-          "subtotal": {
-            "color": "#4d4d4d"
-          },
-          "notice": {
-            "color": "#4d4d4d"
-          },
-          "currency": {
-            "color": "#4d4d4d"
-          },
-          "close": {
-            "color": "#4d4d4d",
-            ":hover": {
-              "color": "#4d4d4d"
-            }
-          },
-          "empty": {
-            "color": "#4d4d4d"
-          },
-          "noteDescription": {
-            "color": "#4d4d4d"
-          },
-          "discountText": {
-            "color": "#4d4d4d"
-          },
-          "discountIcon": {
-            "fill": "#4d4d4d"
-          },
-          "discountAmount": {
-            "color": "#4d4d4d"
-          }
-        },
-        "text": {
-          "title": "My Skippies Shopping Cart",
-          "total": "Subtotal",
-          "button": "CONTINUE TO CHECKOUT"
-        },
-        "popup": false,
-        "googleFonts": [
-          "Roboto"
-        ]
-      },
-      "toggle": {
-        "styles": {
-          "toggle": {
-            "font-family": "Roboto, sans-serif",
-            "font-weight": "bold",
-            "background-color": "#ff6454",
-            ":hover": {
-              "background-color": "#006bb6"
-            },
-            ":focus": {
-              "background-color": "#006bb6"
-            }
-          },
-          "count": {
-            "font-size": "16px"
-          }
-        },
-        "googleFonts": [
-          "Roboto"
-        ]
-      },
-      "lineItem": {
-        "styles": {
-          "variantTitle": {
-            "color": "#4d4d4d"
-          },
-          "title": {
-            "color": "#4d4d4d"
-          },
-          "price": {
-            "color": "#4d4d4d"
-          },
-          "fullPrice": {
-            "color": "#4d4d4d"
-          },
-          "discount": {
-            "color": "#4d4d4d"
-          },
-          "discountIcon": {
-            "fill": "#4d4d4d"
-          },
-          "quantity": {
-            "color": "#4d4d4d"
-          },
-          "quantityIncrement": {
-            "color": "#4d4d4d",
-            "border-color": "#4d4d4d"
-          },
-          "quantityDecrement": {
-            "color": "#4d4d4d",
-            "border-color": "#4d4d4d"
-          },
-          "quantityInput": {
-            "color": "#4d4d4d",
-            "border-color": "#4d4d4d"
-          }
-        }
+      "googleFonts": [
+        "Roboto"
+      ],
+      "text": {
+        "button": "Add to cart"
       }
     },
-          });
-        });
+    "option": {
+      "styles": {
+        "label": {
+          "font-family": "Roboto, sans-serif",
+          "font-weight": "bold"
+        },
+        "select": {
+          "font-family": "Roboto, sans-serif",
+          "font-weight": "bold"
+        }
+      },
+      "googleFonts": [
+        "Roboto"
+      ]
+    },
+    "cart": {
+      "styles": {
+        "button": {
+          "font-family": "Roboto, sans-serif",
+          "font-weight": "bold",
+          "font-size": "16px",
+          "padding-top": "16px",
+          "padding-bottom": "16px",
+          ":hover": {
+            "background-color": "#e65a4c"
+          },
+          "background-color": "#ff6454",
+          ":focus": {
+            "background-color": "#e65a4c"
+          },
+          "border-radius": "8px"
+        },
+        "title": {
+          "color": "#4d4d4d"
+        },
+        "header": {
+          "color": "#4d4d4d"
+        },
+        "lineItems": {
+          "color": "#4d4d4d"
+        },
+        "subtotalText": {
+          "color": "#4d4d4d"
+        },
+        "subtotal": {
+          "color": "#4d4d4d"
+        },
+        "notice": {
+          "color": "#4d4d4d"
+        },
+        "currency": {
+          "color": "#4d4d4d"
+        },
+        "close": {
+          "color": "#4d4d4d",
+          ":hover": {
+            "color": "#4d4d4d"
+          }
+        },
+        "empty": {
+          "color": "#4d4d4d"
+        },
+        "noteDescription": {
+          "color": "#4d4d4d"
+        },
+        "discountText": {
+          "color": "#4d4d4d"
+        },
+        "discountIcon": {
+          "fill": "#4d4d4d"
+        },
+        "discountAmount": {
+          "color": "#4d4d4d"
+        }
+      },
+      "text": {
+        "title": "My Skippies Shopping Cart",
+        "total": "Subtotal",
+        "button": "CONTINUE TO CHECKOUT"
+      },
+      "popup": false,
+      "googleFonts": [
+        "Roboto"
+      ]
+    },
+    "toggle": {
+      "styles": {
+        "toggle": {
+          "font-family": "Roboto, sans-serif",
+          "font-weight": "bold",
+          "background-color": "#ff6454",
+          ":hover": {
+            "background-color": "#e65a4c"
+          },
+          ":focus": {
+            "background-color": "#e65a4c"
+          }
+        },
+        "count": {
+          "font-size": "16px"
+        }
+      },
+      "googleFonts": [
+        "Roboto"
+      ]
+    },
+    "lineItem": {
+      "styles": {
+        "variantTitle": {
+          "color": "#4d4d4d"
+        },
+        "title": {
+          "color": "#4d4d4d"
+        },
+        "price": {
+          "color": "#4d4d4d"
+        },
+        "fullPrice": {
+          "color": "#4d4d4d"
+        },
+        "discount": {
+          "color": "#4d4d4d"
+        },
+        "discountIcon": {
+          "fill": "#4d4d4d"
+        },
+        "quantity": {
+          "color": "#4d4d4d"
+        },
+        "quantityIncrement": {
+          "color": "#4d4d4d",
+          "border-color": "#4d4d4d"
+        },
+        "quantityDecrement": {
+          "color": "#4d4d4d",
+          "border-color": "#4d4d4d"
+        },
+        "quantityInput": {
+          "color": "#4d4d4d",
+          "border-color": "#4d4d4d"
+        }
       }
-    })();
-    /*]]>*/
-    </script>
-	 </div>
-  </div>
+    }
+  },
+        });
+      });
+    }
+  })();
+  /*]]>*/
+  </script>
 <div>
     <div class="container size" align="center">
       <div class="wrap popup contact fade fade_ani" onclick="myFunction()"><h3>SIZE CONVERSION CHART</h3>
